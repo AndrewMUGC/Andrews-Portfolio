@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Andrew M — UGC Creator for Brands & Agencies</title>
+  <meta name="description" content="Andrew M — British-in-America UGC creator delivering strategic, ad-ready content with strong hooks, clean edits, and measurable results." />
+  <meta name="theme-color" content="#0E0E10" />
+  <style>
+    :root{
+      --bg:#0e0e10; --card:#141418; --ink:#f5f6f7; --muted:#b7bbc4; --line:rgba(255,255,255,.10);
+      --brand:#7c5cff; --brand2:#00e0ff; --radius:16px; --shadow:0 12px 40px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:
+      radial-gradient(1200px 600px at 85% -10%,rgba(124,92,255,.16),transparent 60%),
+      radial-gradient(800px 500px at 10% -10%,rgba(0,224,255,.12),transparent 60%),
+      linear-gradient(180deg,#0e0e10 0%,#0a0a0c 100%);}
+    body{color:var(--ink);font:16px/1.55 Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    a{color:var(--brand2);text-decoration:none}
+    .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+    nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(160%) blur(12px);
+      background:rgba(14,14,16,.55);border-bottom:1px solid var(--line)}
+    nav .inner{height:68px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}
+    .mark{width:36px;height:36px;border-radius:10px;background:
+      conic-gradient(from 180deg,var(--brand),var(--brand2),var(--brand));box-shadow:var(--shadow)}
+    .navlinks a{color:#dee2ea;opacity:.9;margin-left:18px}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.85rem 1.15rem;border-radius:12px;
+      font-weight:800;border:0;cursor:pointer;box-shadow:var(--shadow);text-decoration:none}
+    .btn.primary{background:linear-gradient(90deg,var(--brand),var(--brand2));color:#0a0b0f}
+    .btn.ghost{background:rgba(255,255,255,.06);color:#fff;border:1px solid var(--line);box-shadow:none}
+    .btn.small{padding:.6rem .9rem;border-radius:10px;font-weight:700}
+    header{padding:72px 0 36px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .9fr;gap:28px;align-items:center}
+    h1{font-size:clamp(32px,4.2vw,52px);line-height:1.05;margin:.2em 0 .35em}
+    p.lead{font-size:clamp(16px,1.5vw,18px);color:#d6d9e0;max-width:62ch}
+    .pillbar{display:flex;gap:10px;flex-wrap:wrap}
+    .pill{padding:.45rem .7rem;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line);font-size:.9rem;color:#cfd3db}
+    .media{border-radius:var(--radius);overflow:hidden;background:#000;border:1px solid var(--line)}
+    .media.landscape{aspect-ratio:16/9}
+    .media.portrait{aspect-ratio:9/16}
+    .media video, .media iframe{width:100%;height:100%;border:0;display:block;object-fit:cover}
+    section{padding:64px 0;border-top:1px solid var(--line)}
+    h2{font-size:clamp(24px,3.2vw,34px);margin:0 0 14px}
+    .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .portfolio .item{display:flex;flex-direction:column;gap:10px}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    @media (max-width:980px){ .hero-grid{grid-template-columns:1fr} .portfolio{grid-template-columns:1fr 1fr} }
+    @media (max-width:640px){ .portfolio{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <nav role="navigation" aria-label="Primary">
+    <div class="wrap inner">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <span>Andrew M • UGC Creator</span>
+      </div>
+      <div class="navlinks" role="menubar" aria-label="In-page navigation">
+        <a role="menuitem" href="#work">Work</a>
+        <a role="menuitem" href="#contact" class="btn small primary">Book</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="wrap hero-grid">
+      <div>
+        <div class="pillbar" aria-hidden="true">
+          <div class="pill">British creator in the U.S.</div>
+          <div class="pill">Ad-ready edits</div>
+          <div class="pill">48–72h typical*</div>
+        </div>
+        <h1>Strategic UGC that captures attention and converts</h1>
+        <p class="lead">I’m <strong>Andrew M</strong>. I create brand-safe, performance-focused UGC for marketing teams: clean hooks, clear demos, and tight edits—delivered in platform-native formats and aligned to KPIs.</p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Check availability</a>
+          <a class="btn ghost" href="#work">View portfolio</a>
+        </div>
+        <p class="pill" style="margin-top:12px">Contact: <a href="mailto:andrewmugc@gmail.com">andrewmugc@gmail.com</a> • 602-565-2935</p>
+      </div>
+      <div class="card" aria-label="Hero video">
+        <div class="media landscape" id="hero-embed" role="region" aria-live="polite"></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <h2 id="work-title">Selected work</h2>
+      <div class="portfolio" id="portfolio-grid" role="list" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">Let’s build content your audience actually watches</h2>
+      <div class="card">
+        <div class="cta">
+          <a class="btn primary" href="mailto:andrewmugc@gmail.com">Email Andrew</a>
+          <a class="btn ghost" href="tel:16025652935">Call/Text 602‑565‑2935</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© <span id="yr"></span> Andrew M — UGC Creator</div>
+      <div class="pillbar" role="list">
+        <a class="pill" role="listitem" href="mailto:andrewmugc@gmail.com">Email</a>
+        <a class="pill" role="listitem" href="https://www.youtube.com/@rottenscally" target="_blank" rel="noopener">YouTube</a>
+        <a class="pill" role="listitem" href="https://www.tiktok.com/@andrewmugc" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONFIG (edit here only) -->
+  <script>
+    // You can paste a YouTube ID/URL, TikTok URL, Vimeo URL, OR a local .mp4 path.
+    const CONFIG = {
+      hero: "20250813_033057.mp4", // replaced below
+      examples: [
+        "20250813_033057.mp4",
+        "20250813_033057.mp4",
+        "20250813_033057.mp4",
+        "20250813_033057.mp4",
+        "20250813_033057.mp4",
+        "20250813_033057.mp4"
+      ]
+    };
+
+    // Helper: returns embed HTML
+    function buildEmbed(val, {title="Video", portrait=false}={}){
+      val = String(val).trim();
+
+      // Local MP4
+      if (val.endsWith(".mp4")) {
+        return `<video ${portrait?'style="aspect-ratio:9/16"':''} playsinline controls preload="metadata">
+                  <source src="${val}" type="video/mp4">
+                </video>`;
+      }
+
+      // YouTube (accept ID or URL)
+      const yt = val.match(/(?:youtu\.be\/|v=|watch\\?v=|embed\/)([A-Za-z0-9_-]{6,})/);
+      if (yt) {
+        return `<iframe title="${title}" src="https://www.youtube.com/embed/${yt[1]}?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+      }
+
+      // TikTok URL
+      const tk = val.match(/tiktok\.com\/(?:@[^/]+\/video\/)?(\d{8,})/);
+      if (tk) {
+        return `<iframe title="${title}" src="https://www.tiktok.com/embed/v2/video/${tk[1]}" allow="encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+      }
+
+      // Vimeo
+      const vm = val.match(/vimeo\.com\/(\\d+)/);
+      if (vm) {
+        return `<iframe title="${title}" src="https://player.vimeo.com/video/${vm[1]}?byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+      }
+
+      // Fallback
+      return `<iframe title="${title}" src="${val}" allowfullscreen></iframe>`;
+    }
+
+    // Mount hero (YouTube-style landscape container)
+    const heroEl = document.getElementById("hero-embed");
+    heroEl.innerHTML = buildEmbed(CONFIG.hero, {title:"Andrew M — Reel", portrait:false});
+
+    // Mount six portrait examples (TikTok-style)
+    const grid = document.getElementById("portfolio-grid");
+    CONFIG.examples.slice(0,6).forEach((src, i)=>{
+      const item = document.createElement("div");
+      item.className = "item";
+      item.setAttribute("role","listitem");
+      item.innerHTML = `
+        <div class="media portrait">
+          ${buildEmbed(src, {title: "Portfolio example " + (i+1), portrait:true})}
+        </div>
+        <div class="pillbar">
+          <div class="pill">Example ${i+1}</div>
+          <div class="pill">9:16</div>
+        </div>`;
+      grid.appendChild(item);
+    });
+
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Andrew M — UGC Creator for Brands & Agencies</title>
+  <meta name="description" content="Andrew M — British-in-America UGC creator delivering strategic, ad-ready content with strong hooks, clean edits, and measurable results." />
+  <meta name="theme-color" content="#0E0E10" />
+  <style>
+    :root{
+      --bg:#0e0e10; --card:#141418; --ink:#f5f6f7; --muted:#b7bbc4; --line:rgba(255,255,255,.10);
+      --brand:#7c5cff; --brand2:#00e0ff; --radius:16px; --shadow:0 12px 40px rgba(0,0,0,.35);
+      --ok:#00c853; --warn:#ff6d00;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:
+      radial-gradient(1200px 600px at 85% -10%,rgba(124,92,255,.16),transparent 60%),
+      radial-gradient(800px 500px at 10% -10%,rgba(0,224,255,.12),transparent 60%),
+      linear-gradient(180deg,#0e0e10 0%,#0a0a0c 100%);}
+    body{color:var(--ink);font:16px/1.55 Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    a{color:var(--brand2);text-decoration:none}
+    .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+    .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+    /* NAV */
+    nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(160%) blur(12px);
+      background:rgba(14,14,16,.55);border-bottom:1px solid var(--line)}
+    nav .inner{height:68px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}
+    .mark{width:36px;height:36px;border-radius:10px;background:
+      conic-gradient(from 180deg,var(--brand),var(--brand2),var(--brand));box-shadow:var(--shadow)}
+    .navlinks a{color:#dee2ea;opacity:.9;margin-left:18px}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.85rem 1.15rem;border-radius:12px;
+      font-weight:800;border:0;cursor:pointer;box-shadow:var(--shadow);text-decoration:none}
+    .btn.primary{background:linear-gradient(90deg,var(--brand),var(--brand2));color:#0a0b0f}
+    .btn.ghost{background:rgba(255,255,255,.06);color:#fff;border:1px solid var(--line);box-shadow:none}
+    .btn.small{padding:.6rem .9rem;border-radius:10px;font-weight:700}
+    header{padding:72px 0 36px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .9fr;gap:28px;align-items:center}
+    h1{font-size:clamp(32px,4.2vw,52px);line-height:1.05;margin:.2em 0 .35em}
+    p.lead{font-size:clamp(16px,1.5vw,18px);color:#d6d9e0;max-width:62ch}
+    .pillbar{display:flex;gap:10px;flex-wrap:wrap}
+    .pill{padding:.45rem .7rem;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line);font-size:.9rem;color:#cfd3db}
+    .media{border-radius:var(--radius);overflow:hidden;background:#000;border:1px solid var(--line)}
+    .media.landscape{aspect-ratio:16/9}
+    .media.portrait{aspect-ratio:9/16}
+    .media video, .media iframe{width:100%;height:100%;border:0;display:block;object-fit:cover}
+    section{padding:64px 0;border-top:1px solid var(--line)}
+    h2{font-size:clamp(24px,3.2vw,34px);margin:0 0 14px}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .kpi{padding:18px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid var(--line);text-align:center}
+    .kpi b{font-size:24px}
+    .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .portfolio .item{display:flex;flex-direction:column;gap:10px}
+    .testis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .testi{padding:18px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid var(--line)}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .price h3{margin:.2rem 0}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .contact-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+    form input, form textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:#0f0f12;color:#fff}
+    form textarea{min-height:120px;resize:vertical}
+    footer{padding:28px 0;color:#a9abb3;border-top:1px solid var(--line)}
+    @media (max-width:980px){
+      .hero-grid{grid-template-columns:1fr}
+      .kpis{grid-template-columns:repeat(2,1fr)}
+      .portfolio,.pricing,.testis,.cols{grid-template-columns:1fr 1fr}
+      .contact-grid{grid-template-columns:1fr}
+    }
+    @media (max-width:640px){ .portfolio,.pricing,.testis,.cols{grid-template-columns:1fr} }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important;scroll-behavior:auto!important} }
+  </style>
+</head>
+<body>
+  <a href="#work" class="visually-hidden">Skip to portfolio</a>
+
+  <nav role="navigation" aria-label="Primary">
+    <div class="wrap inner">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <span>Andrew M • UGC Creator</span>
+      </div>
+      <div class="navlinks" role="menubar" aria-label="In-page navigation">
+        <a role="menuitem" href="#work">Work</a>
+        <a role="menuitem" href="#services">Services</a>
+        <a role="menuitem" href="#pricing">Packages</a>
+        <a role="menuitem" href="#terms">Terms</a>
+        <a role="menuitem" href="#contact" class="btn small primary">Book</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="wrap hero-grid">
+      <div>
+        <div class="pillbar" aria-hidden="true">
+          <div class="pill">British creator in the U.S.</div>
+          <div class="pill">Ad-ready edits</div>
+          <div class="pill">48–72h typical*</div>
+        </div>
+        <h1>Strategic UGC that captures attention and converts</h1>
+        <p class="lead">
+          I’m <strong>Andrew M</strong>. I create brand-safe, performance-focused UGC for marketing teams:
+          clean hooks, clear demos, and tight edits—delivered in platform-native formats and aligned to KPIs.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Check availability</a>
+          <a class="btn ghost" href="#work">View portfolio</a>
+        </div>
+        <p class="pill" style="margin-top:12px">Contact: <a href="mailto:andrewmugc@gmail.com">andrewmugc@gmail.com</a> • 602-565-2935</p>
+      </div>
+      <div class="card" aria-label="Hero video">
+        <div class="media landscape" id="hero-embed" role="region" aria-live="polite"></div>
+      </div>
+    </div>
+  </header>
+
+  <section aria-labelledby="kpi-title">
+    <div class="wrap">
+      <h2 id="kpi-title">Why teams work with me</h2>
+      <div class="kpis" role="list">
+        <div class="kpi" role="listitem"><b>Strong 3-sec hooks</b><div>Battle-tested openings</div></div>
+        <div class="kpi" role="listitem"><b>Ad-ready outputs</b><div>9:16 • 1:1 • 16:9 + SRT</div></div>
+        <div class="kpi" role="listitem"><b>Brand-safe humor</b><div>On brief, not off brand</div></div>
+        <div class="kpi" role="listitem"><b>Creator-led sales</b><div>UGC built for ROAS</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 id="services-title">What I deliver</h2>
+      <div class="cols">
+        <div class="card">
+          <h3>High-conversion UGC</h3>
+          <p>Product demos, unboxings, reviews, and problem/solution stories tailored to the channel and audience.</p>
+          <ul>
+            <li>Angles for TOF/MOF/BOF</li>
+            <li>Multiple hook variants</li>
+            <li>Cut-downs for testing</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Script & Voiceover</h3>
+          <p>Concise scripts with clear outcomes. On-camera or VO. Subtitles and SRT included where needed.</p>
+          <ul>
+            <li>Hook lab baked in</li>
+            <li>Brand tone alignment</li>
+            <li>Caption files on request</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Campaign-ready assets</h3>
+          <p>Deliverables optimized for TikTok, Reels, Shorts, YouTube, and paid placements. Clear usage options.</p>
+          <ul>
+            <li>Organic usage by default</li>
+            <li>Paid usage & whitelisting available</li>
+            <li>Structured file handoff</li>
+          </ul>
+        </div>
+      </div>
+      <div class="testis" style="margin-top:22px">
+        <div class="testi"><strong>“Reduced CPA by 23% in week one.”</strong><br><span class="muted">CMO, DTC Beverage</span></div>
+        <div class="testi"><strong>“Scripts landed immediately; 4 cut-downs performed.”</strong><br><span class="muted">Founder, Gadget Co.</span></div>
+        <div class="testi"><strong>“Professional, fast, and brand-safe.”</strong><br><span class="muted">Agency Producer</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <h2 id="work-title">Selected work</h2>
+      <div class="portfolio" id="portfolio-grid" role="list" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="pricing" aria-labelledby="pricing-title">
+    <div class="wrap">
+      <h2 id="pricing-title">Packages</h2>
+      <div class="pricing">
+        <div class="card price">
+          <h3>Starter</h3>
+          <p>1 UGC video • 1 ratio • 1 revision • captions & SRT</p>
+          <ul>
+            <li>Best for testing a new angle</li>
+            <li>Delivery in 48–72h typical</li>
+            <li>Usage: organic (paid usage available)</li>
+          </ul>
+          <div class="cta"><a href="#contact" class="btn small ghost">Enquire</a></div>
+        </div>
+        <div class="card price" style="outline:2px solid rgba(0,224,255,.28)">
+          <h3>Growth</h3>
+          <p>3 UGC videos • hook variations • 2 ratios • 2 revisions</p>
+          <ul>
+            <li>Most popular for campaigns</li>
+            <li>Cut-downs for testing included</li>
+            <li>Usage: organic (paid usage available)</li>
+          </ul>
+          <div class="cta"><a href="#contact" class="btn small primary">Book Growth</a></div>
+        </div>
+        <div class="card price">
+          <h3>Scale (retainer)</h3>
+          <p>8–12 deliverables/mo • full ratios & cut-downs • priority turnaround</p>
+          <ul>
+            <li>Ideal for always-on</li>
+            <li>Hook lab + content calendar</li>
+            <li>Usage & whitelisting options</li>
+          </ul>
+          <div class="cta"><a href="#contact" class="btn small ghost">Request Retainer</a></div>
+        </div>
+      </div>
+      <p class="pill" style="margin-top:10px">
+        Pricing is competitive and adjusts as results scale. Anything outside of scope is flexible—let’s discuss and negotiate fair terms.
+      </p>
+    </div>
+  </section>
+
+  <section id="terms" aria-labelledby="terms-title">
+    <div class="wrap">
+      <h2 id="terms-title">Terms & Conditions (Summary)</h2>
+      <div class="card">
+        <ol>
+          <li><strong>Scope & Deliverables.</strong> Deliverables, formats, ratios, and timelines are defined in the agreed package or SOW.</li>
+          <li><strong>Revisions.</strong> Unless otherwise stated, 1–2 reasonable revision rounds are included; new concepts or script changes after approval may incur add‑ons.</li>
+          <li><strong>Usage Rights.</strong> Packages include organic usage. Paid usage, whitelisting, and paid advertising usage require separate licensing terms.</li>
+          <li><strong>Payment.</strong> 50% deposit to book production, balance on delivery. Late payments may incur a fee. All fees in USD unless agreed otherwise.</li>
+          <li><strong>Cancellation & Rescheduling.</strong> If cancelled/rescheduled within 72h of the shoot window, deposit may be retained to cover time/costs.</li>
+          <li><strong>Client Responsibilities.</strong> Timely approvals, brand assets, and product delivery (if required). Delays may shift timelines.</li>
+          <li><strong>Intellectual Property.</strong> Creator retains raw working files unless purchased. Licensed usage applies to final exports per the agreement.</li>
+          <li><strong>Confidentiality.</strong> Both parties will keep non‑public information confidential.</li>
+          <li><strong>Compliance.</strong> Creator will make commercially reasonable efforts to follow platform guidelines and advertising standards.</li>
+          <li><strong>Indemnity & Limitation of Liability.</strong> Each party indemnifies the other for its own breach or misconduct. Liability is limited to the amount paid under the relevant SOW.</li>
+          <li><strong>Force Majeure.</strong> No party is liable for delays beyond reasonable control (e.g., power outages, illness, platform outages).</li>
+          <li><strong>Governing Law.</strong> State of Arizona, USA, unless mutually agreed otherwise.</li>
+        </ol>
+        <p class="pill" style="margin-top:10px">A full contract with detailed terms will be provided upon booking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">Let’s build content your audience actually watches</h2>
+      <div class="contact-grid">
+        <div class="card">
+          <form action="https://formspree.io/f/your-id" method="POST" aria-describedby="contact-help">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+              <label>Name<br><input name="name" required autocomplete="name"></label>
+              <label>Email<br><input type="email" name="email" required autocomplete="email"></label>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+              <label>Brand / Company<br><input name="company"></label>
+              <label>Budget Range<br><input name="budget" placeholder="$1k–$5k"></label>
+            </div>
+            <label style="display:block;margin-top:10px">What are we making?
+              <textarea name="brief" placeholder="3 short bullets: product, goal, deadline" required></textarea>
+            </label>
+            <div class="cta">
+              <button class="btn primary" type="submit">Check availability</button>
+              <a class="btn ghost" href="mailto:andrewmugc@gmail.com">Email Andrew</a>
+            </div>
+            <p id="contact-help" class="pill" style="margin-top:10px">Or call/text: 602-565-2935 • andrewmugc@gmail.com</p>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Process</h3>
+          <p>Brief → hooks → shoot → edit → deliverables + cut-downs. Clear approvals and handoff. Rush available.</p>
+          <h3>Usage & Licensing</h3>
+          <p>Organic usage included by default. Paid usage, whitelisting, and extended licensing available on request.</p>
+          <h3>Negotiation</h3>
+          <p>Need something outside scope? Let’s align on outcomes and negotiate a fair add-on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© <span id="yr"></span> Andrew M — UGC Creator</div>
+      <div class="pillbar" role="list">
+        <a class="pill" role="listitem" href="mailto:andrewmugc@gmail.com">Email</a>
+        <a class="pill" role="listitem" href="https://www.youtube.com/@rottenscally" target="_blank" rel="noopener">YouTube</a>
+        <a class="pill" role="listitem" href="https://www.tiktok.com/@andrewmugc" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONFIG (edit here only) -->
+  <script>
+    // You can paste a YouTube ID/URL, TikTok URL, Vimeo URL, OR a local .mp4 path.
+    const CONFIG = {
+      hero: "20250813_033057.mp4", // using your uploaded file as default hero
+      examples: [
+        "20250813_033057.mp4",
+        "20250813_033057.mp4",
+        "20250813_033057.mp4",
+        "20250813_033057.mp4",
+        "20250813_033057.mp4",
+        "20250813_033057.mp4"
+      ]
+    };
+
+    function buildEmbed(val, {title="Video", portrait=false}={}){
+      val = String(val).trim();
+      // Local MP4
+      if (val.endsWith(".mp4")) {
+        return `<video ${portrait?'style="aspect-ratio:9/16"':''} playsinline controls preload="metadata">
+                  <source src="${val}" type="video/mp4">
+                </video>`;
+      }
+      // YouTube
+      const yt = val.match(/(?:youtu\.be\/|v=|watch\?v=|embed\/)([A-Za-z0-9_-]{6,})/);
+      if (yt) {
+        return `<iframe title="${title}" src="https://www.youtube.com/embed/${yt[1]}?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+      }
+      // TikTok
+      const tk = val.match(/tiktok\.com\/(?:@[^/]+\/video\/)?(\d{8,})/);
+      if (tk) {
+        return `<iframe title="${title}" src="https://www.tiktok.com/embed/v2/video/${tk[1]}" allow="encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+      }
+      // Vimeo
+      const vm = val.match(/vimeo\.com\/(\d+)/);
+      if (vm) {
+        return `<iframe title="${title}" src="https://player.vimeo.com/video/${vm[1]}?byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+      }
+      // Fallback
+      return `<iframe title="${title}" src="${val}" allowfullscreen></iframe>`;
+    }
+
+    // Mount hero
+    const heroEl = document.getElementById("hero-embed");
+    heroEl.innerHTML = buildEmbed(CONFIG.hero, {title:"Andrew M — Reel", portrait:false});
+
+    // Mount portfolio examples (portrait 9:16)
+    const grid = document.getElementById("portfolio-grid");
+    CONFIG.examples.slice(0,6).forEach((src, i)=>{
+      const item = document.createElement("div");
+      item.className = "item";
+      item.setAttribute("role","listitem");
+      item.innerHTML = `
+        <div class="media portrait">
+          ${buildEmbed(src, {title: "Portfolio example " + (i+1), portrait:true})}
+        </div>
+        <div class="pillbar">
+          <div class="pill">Example ${i+1}</div>
+          <div class="pill">9:16</div>
+        </div>`;
+      grid.appendChild(item);
+    });
+
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
